@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens-ico/favicon.ico" type="image/x-icon">
+    <title>Imagens dinamicas, áudio e videos </title>
+</head>
+<body>,
+    <h1>Imagem dinamicas </h1>
+    <p>Tente alterar imagens </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagemPMG/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagemPMG/foto-m.png" type="image/png">
+       <img src="imagemPMG/foto-g.png" alt="imagem flexivel"> 
+    </picture>
+    <h1>Reproduzindo Àudio</h1>
+    <p>Vamos aprender reproduzir áudios</p>
+    <audio src="musica/Frozen in Love.mp3" controls autoplay></audio>
+    <p>Vamos fazer outra maneira</p>
+    <audio preload="metadata"autoplay controls loop >
+        <source src="musica/Frozen in Love.mp3" type="audio/mpeg">
+    </audio>
+    <p>Se não conseguir ouvir pode baixar nesse link </p>
+    <a href="musica/Frozen in Love.mp3" download="Frozem">Frozem</a>
+</body>
+</html>

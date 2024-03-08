@@ -1,0 +1,17 @@
+
+*{
+   height: 100%; 
+}
+.corpo { 
+    background-image:radial-gradient( circle,#3497C3,#53DCFE,#BCF1FE);
+}
+
+.titulo{
+    text-align: center; color: azure;
+    font-size: 50px;
+}
+.logo{
+    width: 300px;
+    height: 300px;
+    border-bottom: 150px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas </title>
+   
+    <!--
+        tipos de formnat()
+      -opentype (otf)
+      -truetype (ttf)
+      -embedded-opentype
+      -trupetype-att (apple advanced typography)
+      -svg
+    -->
+    
+    <style>
+     @font-face {
+        font-family:'Faster Stroker' ;
+        src: url('fonts/Faster Stroker.otf'), format('opentype');
+        font-weight: normal;
+        font-style: normal;
+       
+        }
+     
+     @font-face {
+        font-family:'study alone';
+        src: url('fonts/Study\ Alone.otf'),format('opentype');
+        font-weight: normal;
+        font-style: normal;
+     }
+
+
+      
+     h1{
+        font-family:'Faster Stroker';
+        font-size: 3em;
+     }
+
+
+     p{
+        font-family:'study alone';
+        font-size: 4em;
+        
+     }
+        
+     
+    </style>
+    
+
+</head>
+<body>
+    <h1>Titulo</h1>
+    <br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, illum dolorem reprehenderit suscipit a aliquid eius corporis quisquam exercitationem magnam fugiat iste aut eligendi omnis dolores sunt ut provident voluptatibus.</p>
+</body>
+</html>
