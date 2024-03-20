@@ -10,12 +10,18 @@
         }
         table{
             width: 400px;
-            border-collapse: collapse;
+            border-collapse: collapse; /* border-collapse tira os espaços da tabela*/
             background-image: url(imagen/wallpaper001.jpg);
             font-size: 1.5em;
             color: rgb(27, 27, 30);
         }
 
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: gray;
+        }
         td, th{
             border: 1px solid black;
             padding: 5px;
@@ -28,20 +34,24 @@
 
         td.num{
             text-align: right;
+            color: white;
         }
+        
     </style>
 </head>
 <body>
     <h1>Tabelas grandes</h1>
     <table>
-        <thead>
+        <caption>Idade da Familia</caption><!--titulo-->
+        <thead> <!--cabeçalho-->
             <tr>
-                <th>Nome</th>
-                <th>Idade</th>
+                <!--th subtitulo-->
+                <th scope="col"><!--col sempre coluna--></th>>Nome</th>
+                <th scope="col" style="width: 40px;">Idade</th>
             </tr>
         </thead>
 
-        <tbody>
+        <tbody> <!--corpo-->
          <tr>
             <td>Regiane</td>
             <td class="num">57</td>
@@ -58,10 +68,10 @@
         </tr>
         </tbody>
 
-        <tfoot>
+        <tfoot> <!--pe-->
           <tr>
-            <td><strong>Total de idade</strong></td>
-            <td class="num"><strong>105</strong></td>
+            <th scope="row"><!--row sempre em linha--><strong>Total de idade</strong></th>
+            <th scope="row" class="num"><strong>105</strong></th>
           </tr>
         </tfoot>
     </table>
