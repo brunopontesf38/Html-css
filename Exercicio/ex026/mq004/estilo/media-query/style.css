@@ -1,6 +1,68 @@
 @charset "UTF-8";
 /*Todas as medias*/
+/*
+typical  Device Breakpoints 
+----------------------------
+pequenas telas: até 600px 
+celular: de 600px até 768px 
+Tablet: 768px até 992px 
+Desktop: 992px até 1200px 
+Grandes telas: acima de 1200px dados do professor na epoca 
 
-@media screen {
-    
+DADOS ATUAIS 
+Mobile: 360 x 640.
+Mobile: 375 x 667.
+Mobile: 360 x 720.
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080.
+*/
+@media print{
+
+}
+
+@media screen and (min-width: 590px) and (max-width: 768px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {
+        display: none;
+        margin: auto;
+    }
+    img#tablet{
+        display: block;
+    }
+    img#impressão{
+        display: none;
+    }
+    img#desktop{
+        display: none;
+    }
+    img#TV{
+        display: none;
+    }
+}
+
+@media screen and ( min-width: 768px )  and (max-width: 1080px ) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone {
+        display: none;
+        margin: auto;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#impressão{
+        display: none;
+    }
+    img#desktop{
+        display: block;
+    }
+    img#TV{
+        display: none;
+    }
 }
