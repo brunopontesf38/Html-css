@@ -21,7 +21,7 @@ High-res laptop or desktop: 1920 x 1080.
 */
 @media print{
     body{
-       
+       font-size: 1.3em;
     }
     main,h1{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
