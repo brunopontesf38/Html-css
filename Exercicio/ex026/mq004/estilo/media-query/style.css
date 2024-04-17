@@ -20,8 +20,37 @@ Laptop: 1366 x 768.
 High-res laptop or desktop: 1920 x 1080.
 */
 @media print{
+    body{
+       
+    }
+    main,h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: 2px solid black;
+    }
 
+    img#phone {
+        display: none;
+        margin: auto;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#impressão{
+        display: block;
+        margin: auto;
+    }
+    img#desktop{
+        display: none ;
+    }
+    img#TV{
+        display: none;
+    }
 }
+
+
+
+
+    
 
 @media screen and (min-width: 590px) and (max-width: 768px) {
     body{
