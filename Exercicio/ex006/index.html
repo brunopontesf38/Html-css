@@ -11,7 +11,27 @@
     <h2>Introdução</h2>
     <h3>Justificação da Tematica</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore harum, provident nam exercitationem aliquid dolor minima officia fuga labore molestias, quae sequi consequuntur ducimus praesentium consectetur vitae facere, alias voluptatem?</p>
-    <h3>Carater excional</h3>
     <h2>Ordenamento do territorio em Portual</h2>
+
+    <h2>Somando Valores </h2>
+     <input type="number" name="n01" id="n01"> +
+     <input type="number" name="n02" id="n02">
+     <input type="button" value="Somar" onclick="somar()">
+      <p id="res">resposta...</p>
+   <script>
+      function somar() {
+        let num01 = window.document.getElementById('n01');
+        let num02 = window.document.querySelector('input#n02');
+        let n1 = Number(n01.value)
+        let n2 = Number(n02.value)
+
+        let s =  (n1 + n2) 
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        
+        
+      }
+   </script>
+
+
 </body>
 </html>
